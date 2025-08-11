@@ -18,7 +18,7 @@ let copia = new Date(agora);
 let dateParse = Date.parse(agora); 
 
 // Criação via string
-let d1 = new Date("2025-08-11"); //Sun Aug 10 2025 21:00:00 GMT-0300 (Horário Padrão de Brasília)
+let d1 = new Date("2025-08-11"); Ano mês e dia //Sun Aug 10 2025 21:00:00 GMT-0300 (Horário Padrão de Brasília)
 let d2 = new Date("August 11, 2025 15:30:00");
 
 // Criação via parâmetros numéricos (mês começa em 0)
