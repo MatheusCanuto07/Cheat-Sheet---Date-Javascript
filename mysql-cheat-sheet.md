@@ -21,6 +21,14 @@ Ele pode ser usado em situações como:
 - Contar o número de vezes que um registro aparece  
 - Buscar a quantidade de pedidos por dia  
 
+"PostgresError: a coluna 'order.finished_at' deve aparecer na cláusula GROUP BY ou ser usada em uma função agregada."
+
+Explicando de forma simples:
+
+Quando você usa GROUP BY no PostgreSQL, todas as colunas selecionadas que não fazem parte do GROUP BY precisam ser usadas dentro de uma função agregada (como COUNT(), SUM(), AVG(), etc.).
+
+No seu caso, order.finished_at está no SELECT, mas não está no GROUP BY nem dentro de uma função agregada, por isso o erro.
+
 ### Exemplo
 ```sql
 SELECT COUNT(CustomerID), Country
