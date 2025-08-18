@@ -146,3 +146,15 @@ SELECT City, Country FROM Suppliers
 WHERE Country='Germany'
 ORDER BY City;
 ```
+Constraints = Restrição
+
+As seguintes restrições são comumente usadas em SQL:
+
+NOT NULL- Garante que uma coluna não pode ter um valor NULL
+UNIQUE- Garante que todos os valores em uma coluna sejam diferentes
+PRIMARY KEY- Uma combinação de a NOT NULL e UNIQUE. Identifica exclusivamente cada linha em uma tabela
+FOREIGN KEY - Evita ações que destruiriam links entre tabelas
+CHECK- Garante que os valores em uma coluna satisfaçam uma condição específica
+DEFAULT- Define um valor padrão para uma coluna se nenhum valor for especificado
+CREATE INDEX- Usado para criar e recuperar dados do banco de dados muito rapidamente
+
